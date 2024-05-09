@@ -1,0 +1,99 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Added padding for better spacing on smaller screens */
+    box-sizing: border-box; /* Ensures padding is included in the total width/height */
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    gap: 10px; /* Reduced the gap for better spacing on smaller screens */
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 24px; /* Adjusted font size for smaller screens */
+    font-weight: 700;
+    margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    list-style: none;
+    gap: 10px; /* Reduced the gap for better spacing on smaller screens */
+    color: #252525;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 10px; /* Reduced the gap for better spacing on smaller screens */
+}
+
+.footer-icons-container {
+    padding: 10px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    margin-top: 10px; /* Added margin for better spacing */
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Reduced the gap for better spacing on smaller screens */
+    width: 100%;
+    color: #1a1a1a;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    text-align: center; /* Center-align text on smaller screens */
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 2px; /* Reduced the height for a subtler divider on smaller screens */
+    background: #c7c7c7;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        gap: 20px;
+    }
+    .footer-logo {
+        gap: 10px;
+        align-items: end;
+    }
+    .footer-logo img {
+        width: 40px;
+    }
+    .footer-logo p {
+        font-size: 25px;
+    }
+    .footer-links {
+        font-size: 14px;
+        gap: 10px;
+    }
+    .footer-social-icon img {
+        width: 22px;
+    }
+    .footer-copyright {
+        font-size: 13px;
+    }
+}
